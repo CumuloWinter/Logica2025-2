@@ -12,7 +12,7 @@ programa
 	{
 		inteiro input
 	
-		escreva("1 = Nova nota\n2 = Média\n3 = Limpar\n")
+		escreva("1 = Nova nota\n2 = Total\n3 = Limpar\n")
 		leia(input)
 
 		escolha(input)
@@ -35,7 +35,7 @@ programa
 			senao
 			{
 				real media = notasTotal/qntNotas
-				escreva(notasTotal)
+				escreva(notasTotal +"\n")
 			}
 			caso 3:
 			Limpar()
@@ -56,7 +56,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 53; 
+ * @POSICAO-CURSOR = 232; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
