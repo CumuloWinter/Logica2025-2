@@ -1,31 +1,37 @@
 programa
 {
-	inteiro valor, sucessor, antecessor
+	inclua  biblioteca Matematica --> mat
 	
 	funcao inicio()
 	{
-		escreva("CALCULADOR DE SEQUENCIA")
-		LerInput()
+		escreva("SIMULADOR DE POSTO SHELL 2025")
+		CalcularCusto()
 	}
 
-	funcao LerInput()
+	funcao CalcularCusto()
 	{
-		escreva("\n\nValor = ")
-		leia(valor)
+		real precoLitro, pagamento, litros
 
-		antecessor = valor-1
-		sucessor = valor+1
-		escreva("Sequencia = "+antecessor+", "+valor+", "+sucessor)
+		escreva("\n\nPreço Gasolina(R$/l): ")
+		leia(precoLitro)
 
-		LerInput()
+		escreva("Valor Pago(R$): ")
+		leia(pagamento)
+
+		litros = mat.arredondar(pagamento/precoLitro,2)
+
+		escreva("LITROS COMPRADOS = "+litros+"l")
+
+		CalcularCusto()
 	}
 }
+
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 159; 
+ * @POSICAO-CURSOR = 430; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

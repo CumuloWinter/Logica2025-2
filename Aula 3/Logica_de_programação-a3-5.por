@@ -1,23 +1,29 @@
 programa
 {
-	inteiro valor, sucessor, antecessor
+	inteiro valorAtual
 	
 	funcao inicio()
 	{
-		escreva("CALCULADOR DE SEQUENCIA")
-		LerInput()
+		escreva("SOMADOR DE VALORES, DIGITE 0 PARA FINALIZAR\n\n")
+		
+		IniciarContagem()
 	}
 
-	funcao LerInput()
+	funcao IniciarContagem()
 	{
-		escreva("\n\nValor = ")
-		leia(valor)
+		valorAtual = 0
 
-		antecessor = valor-1
-		sucessor = valor+1
-		escreva("Sequencia = "+antecessor+", "+valor+", "+sucessor)
+		inteiro valor
 
-		LerInput()
+		faca
+		{
+			leia(valor)
+			valorAtual+=valor
+		} 
+		enquanto (valor!=0)
+		
+		escreva("\n\nTOTAL = "+valorAtual)
+		IniciarContagem()
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -25,7 +31,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 159; 
+ * @POSICAO-CURSOR = 175; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

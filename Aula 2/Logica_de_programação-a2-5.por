@@ -1,35 +1,23 @@
 programa
 {
-	real valor1, valor2, soma
-	cadeia input
+	inteiro valor
 	
 	funcao inicio()
 	{
-		LerInput()
+		AvaliarNumero()
 	}
-
-	funcao LerInput()
+	
+	funcao AvaliarNumero()
 	{
-		escreva("Primeiro valor = ")
-		leia(valor1)
+		escreva("Insira o número: ")
+		leia(valor)
 
-		escreva("Segundo valor = ")
-		leia(valor2)
-
-		soma = valor1+valor2
-		
-		escreva("Soma = "+soma+"\nDigite qualquer tecla para retornar\n")
-		leia(input)
-
-		Reset()
-	}
-
-	funcao Reset()
-	{
-		valor1 = 0.0
-		valor2 = 0.0
-		
-		LerInput()
+		se(valor>0)
+			escreva("O valor é positivo")
+		senao se(valor == 0)
+			escreva("O valor é zero")
+		senao
+			escreva ("O valor é negativo")
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -37,7 +25,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 237; 
+ * @POSICAO-CURSOR = 290; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

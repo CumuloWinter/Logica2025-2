@@ -1,10 +1,10 @@
 programa
 {
-	real valor1, valor2
+	real valor1, valor2, soma
+	cadeia input
 	
 	funcao inicio()
 	{
-		escreva("SOMA DE DOIS VALORES\n\n")
 		LerInput()
 	}
 
@@ -16,9 +16,8 @@ programa
 		escreva("Segundo valor = ")
 		leia(valor2)
 
-		real soma = valor1+valor2
+		soma = valor1+valor2
 		
-		cadeia input
 		escreva("Soma = "+soma+"\nDigite qualquer tecla para retornar\n")
 		leia(input)
 
@@ -38,7 +37,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 104; 
+ * @POSICAO-CURSOR = 237; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

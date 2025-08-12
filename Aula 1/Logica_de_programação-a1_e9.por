@@ -1,6 +1,7 @@
 programa
 {
-	real distanciaPercorrida, combustivel, consumoMedio
+	inclua biblioteca Matematica-->mat
+	real distanciaPercorrida, combustivel, consumoMedio
 	
 	funcao inicio()
 	{
@@ -16,7 +17,7 @@ programa
 		escreva("Combustível consumido(l): ")
 		leia(combustivel)
 
-		consumoMedio = distanciaPercorrida/combustivel
+		consumoMedio = mat.arredondar(distanciaPercorrida/combustivel,2)
 		
 		escreva("CONSUMO MÉDIO = "+consumoMedio+"km/l")
 
@@ -28,7 +29,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 183; 
+ * @POSICAO-CURSOR = 416; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
